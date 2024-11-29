@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: "Montserrat";
+    transition: 0.3s;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat.ttf);
+    font-weight: 400;
+}
+
+/* ФОН */
+.backgrnd {
+    background-image: url(../media/banner/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    border-radius: 60px;
+}
+
+/* задал позишн релейтив */
+.for_absolute{
+    position: relative;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 110px;
+    color: white;
+    padding-top: 140px;
+    padding-left: 66px;
+    padding-bottom: 82px;
+    font-style: normal;
+    line-height: 88px;
+    letter-spacing: -0.03em;
+}
+
+/* линия под словом "новый" */
+.underline {
+    position: absolute;
+    width: 347px;
+    height: 5px;
+    background: #B9D043;
+    border-radius: 25px;
+    bottom: 150px;
+    left: 72px;
+}
+
+.btn img {
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.btn img:hover {
+    transform: translateX(-5px);
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 66px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: 431px;
+    height: 89px;
+    background: #B9D043;
+    border-radius: 140px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #8d9e0c;
+}
+
+button {
+    background: none;
+    border: none;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.lines {
+    position: absolute;
+    opacity: 0.78;
+    bottom: 320px;
+    left: 980px;
+}
+
+.cat {
+    position: absolute;
+    width: 1209.81px;
+    height: 762px;
+    border-radius: 0px 0px 60px 0px;
+    left: 693px;
+    top: 190px;
+}
+
+.close_btn {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+/* .close_btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+} */
+
+.close_btn img{
+    cursor: pointer;
+}
+
+.close_btn img:hover{
+    transform: scale(1.1);
+}
